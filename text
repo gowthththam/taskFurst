@@ -1,0 +1,15 @@
+TaskFürst is an AI-powered platform designed to enhance productivity for VIPs, CXOs, and senior leaders by integrating with enterprise tools to centralize and prioritize tasks. It uses AI to evaluate tasks based on urgency and strategic impact, suggesting optimal time blocks for focused work. The intuitive dashboard provides real-time insights, ensuring leaders focus on high-value activities. Built on a scalable microservices architecture, it seamlessly fits into existing IT ecosystems.
+ 
+What problem are you trying to solve?*
+
+ 
+TaskFürst addresses the problem of fragmented and inefficient task management faced by VIPs, CXOs, and senior leaders. Executives often grapple with overwhelming volumes of tasks dispersed across multiple platforms, which can lead to reactive decision-making and a lack of focus on strategic priorities. This fragmentation not only hampers their ability to prioritize effectively but also impacts overall employee productivity and experience. By providing a centralized, AI-driven solution, TaskFürst dynamically prioritizes tasks and optimizes scheduling, allowing leaders to focus on high-impact activities that drive organizational success and elevate employee productivity and experience.
+ 
+Technology Stack being used
+ 
+The technology stack includes the OPEA™ platform for AI development, with Python handling backend logic and React/Angular for the UI. Integration with enterprise tools is achieved through REST APIs and webhooks. NLP and ML models are used for task classification and prioritization, optimized by the OpenVINO™ Toolkit. The infrastructure features Intel® Xeon® CPUs and Gaudi® AI Accelerators for robust AI processing.
+ 
+Is this your first hackathon? If No, then please share your experience.
+ 
+No, this is not my first hackathon. In a previous hackathon, I worked on developing a legal assistant tool. The experience was both challenging and rewarding, as it involved collaborating with a team to address complex problems faced by the legal industry. We focused on integrating natural language processing to help streamline legal research and document management. It was a great opportunity to apply technical skills in a practical setting and learn from other talented participants. The experience also highlighted the importance of teamwork and creative problem-solving.
+ 
