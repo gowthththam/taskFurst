@@ -1,0 +1,31 @@
+export async function copyMessageContent(message: string) {
+  // Try to match markdown image: ![alt](url)
+  const match = message.match(/!\[.*?\]\((.*?)\)/);
+  if (match) {
+    const imageUrl = match[1];
+    try {
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+      await navigator.clipboard.write([
+        new window.ClipboardItem({ [blob.type]: blob }),
+      ]);
+      // Download the image as well
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "copied-image.png";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      showToast("Image copied! click on downloaded file in to edit.");
+      return;
+    } catch (e) {
+      showToast("Failed to copy image.");
+    }
+  }
+  // Fallback: copy as text
+  await copyToClipboard(message);
+}
+ 
+Hi team, please replace the code for the copyMessageContent function in this file with the existing code in the utils file
